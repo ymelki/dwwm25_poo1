@@ -23,4 +23,17 @@ echo "<br />";
 $p2=new Personne("Axel","Doe",35); 
 $p2->afficher();
 
+
+echo "<br />";
+require "Feu_route.php";
+
+$f1=new Feu_route("rouge");
+var_dump($f1);
+$f1->change();
+$f1->change();
+$f1->change();
+$f1->change();
+$f1->change();
+$f1->change();
+
 ?>
