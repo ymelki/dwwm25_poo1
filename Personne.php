@@ -6,11 +6,11 @@ class Personne {
     public $prenom;
     public $age;
 
-    public function __construct($nom,$prenom,$age)
+    public function __construct($nom,$prenom,int $age)
     { 
         $this->nom=$nom;
         $this->prenom=$prenom;
-        $this->age=$age;
+        if ($this->age>0 && $this->age<120) $this->age=$age;
 
     }
     //Méthode (fonctions qui vont appartenir a ma classe)
