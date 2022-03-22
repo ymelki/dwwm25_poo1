@@ -1,7 +1,7 @@
 <?php
 
 require "Personnes.php";
-$p1=new Personnes();
+$p1=new Personnes("Yoel","Melki",34);
 
 
 /**
@@ -19,5 +19,9 @@ $p1->setAge(25);
 
  echo $p1->getAge();
 
-
+require "Homme.php";
+$h=new homme("John","Axel",33);
+$h->afficher();
+$h->marche();
+var_dump($h);
 
