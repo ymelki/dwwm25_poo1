@@ -34,6 +34,13 @@ $f1->change();
 $f1->change();
 $f1->change();
 $f1->change();
-$f1->change();
+
+require "vehicule.php";
+$v1=new Vehicule("bleu","Audi",0);
+$v1->anticiper(new Feu_route("vert"));
+$v1->anticiper(new Feu_route("vert"));
+$v1->anticiper(new Feu_route("orange"));
+$v1->anticiper(new Feu_route("rouge"));
+
 
 ?>
