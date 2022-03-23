@@ -13,7 +13,7 @@ class Patron extends Employee {
     }
 
     public function rouler(){
-        echo "je roule c'est pas mal !  et je m'appelle ".$this->prenom;
+        echo "je roule c'est pas mal !  et je m'appelle ".$this->nom;
         // je ne peux pas faire this->nom si il reste en private. Seul la classe employee peut.
     }
 }

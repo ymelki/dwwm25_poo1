@@ -10,5 +10,5 @@ $e=new Employee("Yoel","Melki",34);
 // 2 probleme 
 $p=new Patron("Axel","Doe",42,"opel");
 
-echo $p->prenom; // protected ne peut pas . Si c'était en public il aurait pu
+ //echo $p->prenom; protected ne peut pas . Si c'était en public il aurait pu
 $p->rouler();

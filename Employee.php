@@ -2,9 +2,11 @@
 class Employee {
 
     // propriété
-    private $nom;
+    protected $nom;
     protected $prenom;
-    private $age;
+    protected $age;
+
+    private $poste;
 
     public function __construct($nom,$prenom,int $age)
     { 
@@ -19,7 +21,7 @@ class Employee {
     }
 
     function travaille(){
-        echo "je travaille";
+        echo "je travaille et je suis ".$this->poste;
     }
 }
 
