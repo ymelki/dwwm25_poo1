@@ -16,11 +16,11 @@ function afficher($nom,$prenom,$age){
 
 //afficher($nom2,$prenom2,$age2);
 require "Personne.php";
-$p1=new Personne("Melki","Yoel",34);
+$p1=new Personne("Melki","Yoel",34); // lance la methode constructeur
 $p1->afficher();
 
 echo "<br />";
-$p2=new Personne("Axel","Doe",35); 
+$p2=new Personne("Axel","Doe",35); // lance la methode constructeur
 $p2->afficher();
 
 
